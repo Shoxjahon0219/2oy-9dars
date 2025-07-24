@@ -16,6 +16,7 @@ router.post("/", async (req, res) => {
     }
     let data = new Category(value);
     await data.save();
+    res.status(201).json(data);
   } catch (e) {
     res.status(400).json({ message: e.message });
   }

@@ -5,9 +5,9 @@ const CategoryRouter = require("./routes/category");
 const app = express();
 app.use(express.json());
 
-mongoose
+mongoose // 4QYHciDvPymf9Vo2
   .connect(
-    "mongodb+srv://shoxjahonzohirov2010:VMQdTaUxX6omXX5z@darss.h2xtyp4.mongodb.net/myapp"
+    "mongodb+srv://shoxjahonzohirov2010:4QYHciDvPymf9Vo2@dars.trkfrl2.mongodb.net/?retryWrites=true&w=majority&appName=Dars"
   )
   .then(() => console.log("COnnected to db"))
   .catch((e) => console.log({ message: e.message }));
